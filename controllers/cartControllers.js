@@ -1,5 +1,5 @@
 const _ = require("lodash");
-const { Cart } = require("../models/cartItem");
+const { Cart } = require("../models/cart");
 
 module.exports.createCartItem = async (req, res) => {
   let { price, product } = _.pick(req.body, ["price", "product"]);

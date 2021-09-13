@@ -31,5 +31,6 @@ cartSchema.pre(/^find/, function (next) {
   });
   next();
 });
-module.exports.Cart =
-  mongoose.models["Cart"] || mongoose.model("Cart", cartSchema);
+module.exports.Cart = mongoose.model("Cart", cartSchema);
+// module.exports.Cart =
+//   mongoose.models["Cart"] || mongoose.model("Cart", cartSchema);

@@ -1,7 +1,7 @@
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const { User } = require("./../models/people");
 const catchAsync = require("./../utils/catchAsync");
-const { Cart } = require("./../models/cartitem");
+const { Cart } = require("../models/cart");
 const Profile = require("./../models/profile");
 const Purchase = require("./../models/purchaseItems");
 const factory = require("./handlerFactory");
